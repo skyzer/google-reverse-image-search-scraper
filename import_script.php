@@ -202,11 +202,12 @@ if ($importScript->img_file_name) {
 	$image_file_name = $importScript->img_file_name;
 
     echo "Image name: <strong>" . $image_file_name . "</strong> ";
-    echo "Imported picture " . $i . ", url: " . $pic_url . " and title: ".$post_title."<br />";
+    echo "Imported picture ".$i.", url: ".$pic_url."<br />";
 	
 	// do here with the image file name some specific operations for your website, e.g insert new picture etc
 } else {
     echo "Nothing found about the picture, url: " . $pic_url . "<br />";
 }
+$i++;
 			
 // } end of some loop
